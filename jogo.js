@@ -18,9 +18,12 @@ if(nivel === 'Normal'){
 } else if(nivel === 'Hard'){
     // 1000 s
     criaMosquitoTempo = 1000
-} else if(nivel === 'Impossible'){
-    // 750 s
+} else if(nivel === 'mthard'){
+// 750 s
     criaMosquitoTempo = 750
+}else if(nivel === 'Impossible'){
+    // 550 s
+    criaMosquitoTempo = 550
 }
 
 
