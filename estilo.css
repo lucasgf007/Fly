@@ -1,0 +1,83 @@
+html{
+    cursor: url(imagens/mata_mosca.png) 30 30, auto;
+}
+
+body{
+    background: url(imagens/bg.jpg);
+    background-repeat: no-repeat;
+    
+}
+
+.esmagaMosca{
+    height: 50px;
+    width: 50px;
+    border-radius: 500px;
+}
+
+.mosca{
+    height: 50px;
+    width: 50px;
+}
+.mosca2{
+    height: 70px;
+    width: 70px;
+}
+.mosca3{
+    height: 90px;
+    width: 90px;
+}
+.ladoA{
+    transform: scaleX(1); /*escala normal*/
+} 
+.ladoB{
+    transform: scaleX(-1); /*inverte a img*/
+}
+
+
+.painel{
+    position: absolute;
+    width: 190px;
+    padding: 10px;
+    bottom: 0px;
+    left: 0px;
+    border-top: solid 1px #fff;
+    background-color: #fff;
+    opacity: 0.7;
+}
+.vida{
+    float: left;
+    bottom: 0px;
+
+}
+.cronometro{
+    float: left;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+
+/* media queris */
+
+@media (min-width: 768px) { 
+    body{
+        
+        background-size: 100%;
+    }
+}
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    body{
+        
+        background-size: 100%;
+    }
+}
+
+/* // Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    body{
+        
+        background-size: 100%;
+    }
+}

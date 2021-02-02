@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mata-Mosquito</title>
+    <link rel="icon" href="imagens/gamepad-solid.svg">
+
+    <link rel="stylesheet" href="estilo.css">
+    <script src="jogo.js"></script>
+
+</head>
+<!-- atualiza smp o script com as dimensões da pag -->
+<body onresize="ajusteTamanho()">
+    
+    <div class="painel">
+        <div class="vida">
+            <img id="v1" src="imagens/coracao_cheio.png" alt="coracao_vazio">
+            <img id="v2" src="imagens/coracao_cheio.png" alt="coracao_vazio">
+            <img id="v3" src="imagens/coracao_cheio.png" alt="coracao_vazio">
+
+        </div>
+
+        <div class="cronometro">
+            Tempo restante:
+            <span id="cronometro"></span> 
+        </div>
+    </div>
+
+
+    <script>
+        document.getElementById('cronometro').innerHTML = tempo // inclui o valor do tempo "10" antes do decremento ser execuado, para assim aparecer primeiro o 10 e não o 9, ja descrementado
+
+        // fazer rodar a função dentro de um timer repetidor do BOM
+        var criarMosca = setInterval(function(){ // atravs da var, vms fzr essa função para de executar qd o usuario vencer o jogo
+            posicaoRandomica() // chamando a função
+        },criaMosquitoTempo)
+    </script>
+</body>
+</html>
