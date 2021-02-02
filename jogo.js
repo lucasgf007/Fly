@@ -23,7 +23,7 @@ if(nivel === 'Normal'){
     criaMosquitoTempo = 750
 }else if(nivel === 'Impossible'){
     // 550 s
-    criaMosquitoTempo = 550
+    criaMosquitoTempo = 690
 }
 
 
